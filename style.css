@@ -1,44 +1,182 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@font-face{
-  font-family: 'SugarLike-Bold';
-  src: url('fonts/SugarLike-Bold.otf');
+@font-face {
+    font-family: 'SugarLike-Bold';
+    src: url('fonts/SugarLike-Bold.otf');
 }
 
-.hero{
-  background-color: #000000;
-  display: flex;
+body {
+    background: #050505;
+    overflow-x: hidden;
 }
 
+.smoke {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.4;
+    animation: float 12s infinite alternate ease-in-out;
+    z-index: -1;
+}
 
-.hero img{
+.pink {
+    background: #ff0080;
+    top: -100px;
+    left: -100px;
+}
+
+.cyan {
+    background: cyan;
+    top: 200px;
+    right: -100px;
+}
+
+.yellow {
+    background: yellow;
+    bottom: -100px;
+    left: 30%;
+}
+
+.green {
+    background: #39ff14;
+    bottom: 0;
+    right: 20%;
+}
+
+@keyframes float {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(80px, -50px) scale(1.2);
+    }
+}
+
+.hero {
+    margin-top: -100px;
+    display: flex;
+    padding: 100px 80px 180px;
+}
+
+.hero img {
     width: 400px;
     height: 500px;
-  position: relative;
-  left: -55px;
+    position: relative;
+    left: -95px;
 }
 
-.hero h1{
-  color: #fff;
-  font-size: 50px;
-  font-family: 'SugarLike-Bold', sans-serif;
-  position: relative;
-  top: 180px;
-  left: -50px;
+.hero h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'SugarLike-Bold', sans-serif;
+    position: relative;
+    top: 180px;
+    left: -470px;
 }
 
-.rosa{
-  color: hotpink;
+.hero h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'SugarLike-Bold', sans-serif;
+    position: relative;
+    top: 430px;
+    left: -460px;
 }
 
-.azul{
-  color: cyan;
+.rosa {
+    color: hotpink;
 }
 
-.amarelo{
-  color: yellow;
+.azul {
+    color: cyan;
+}
+
+.amarelo {
+    color: yellow;
+}
+
+
+
+#obras {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 120px 40px 80px;
+
+    margin-top: -350px;
+    border-radius: 60px 60px 0 0;
+}
+
+#obras h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: 'SugarLike-Bold', sans-serif;
+}
+
+#obras h3 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: 'SugarLike-Bold', sans-serif;
+}
+
+#obras a {
+    position: relative;
+    top: -40px;
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    background: hotpink;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'SugarLike-Bold', sans-serif;
+    font-size: 30px;
+    transition: background 0.3s;
+}
+
+.obra {
+
+    background: rgba(255, 255, 255, 0.712);
+    backdrop-filter: blur(10px);
+
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.obra:hover {
+    transform: translateY(-10px);
+}
+
+.obra img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.obra h3 {
+    margin-top: 15px;
+}
+
+.obra p {
+    margin-top: 10px;
+    opacity: 0.8;
 }
