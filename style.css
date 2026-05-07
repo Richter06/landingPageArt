@@ -9,9 +9,24 @@
     src: url('fonts/SugarLike-Bold.otf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #050505;
     overflow-x: hidden;
+}
+
+.pop{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.pop.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .smoke {
@@ -58,6 +73,46 @@ body {
         transform: translate(80px, -50px) scale(1.2);
     }
 }
+
+
+.menu-flutuante{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+
+    width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(12px);
+}
+
+.menu-flutuante a{
+    color: white;
+    text-decoration: none;
+
+    font-family: 'SugarLike-Bold', sans-serif;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu-flutuante a:hover{
+    color: hotpink;
+    transform: translateX(-5px);
+}
+
 
 .hero {
     margin-top: -100px;
@@ -179,4 +234,235 @@ body {
 .obra p {
     margin-top: 10px;
     opacity: 0.8;
+}
+
+#sobre{
+    max-width: 1000px;
+
+    margin: 120px auto;
+
+    padding: 60px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(14px);
+
+    border-radius: 40px;
+
+    box-shadow:
+    0 0 40px rgba(255,0,128,0.08),
+    0 0 80px rgba(0,255,255,0.05);
+}
+
+#sobre h2{
+    font-size: 55px;
+
+    margin-bottom: 50px;
+
+    color: white;
+
+    font-family: 'SugarLike-Bold', sans-serif;
+
+    text-align: center;
+}
+
+#sobre p{
+    color: rgba(255,255,255,0.85);
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-bottom: 30px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+
+    letter-spacing: 0.5px;
+}
+
+#contato{
+    text-align: center;
+
+    padding: 120px 40px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+#contato h2{
+    font-size: 60px;
+
+    margin-bottom: 30px;
+
+    font-family: 'SugarLike-Bold', sans-serif;
+}
+
+#contato p{
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    color: rgba(255,255,255,0.8);
+
+    font-family: "Trebuchet MS", sans-serif;
+
+    letter-spacing: 0.5px;
+}
+
+.btn{
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 15px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    transition: 0.4s;
+}
+
+.btn:hover{
+    transform: translateY(-10px) scale(1.08);
+
+    box-shadow:
+    0 0 30px hotpink,
+    0 0 60px cyan;
+}
+
+.btn img{
+    width: 38px;
+}
+
+.pop{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.pop.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1024px){
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 80px 30px;
+    }
+
+    .hero img{
+        position: static;
+        width: 300px;
+        height: auto;
+    }
+
+    .hero h1
+    {
+        position: static;
+        left: 0;
+        top: 0;
+        margin-top: 30px;
+    }
+    .hero h2{
+        position: static;
+        left: 0;
+        top: 0;
+        margin-top: -60px;
+    }
+
+    #obras{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+
+    .menu-flutuante{
+        top: 5px;
+        right: 15px;
+        width: auto;
+        flex-direction: row;
+        border-radius: 30px;
+        padding: 10px 15px;
+        z-index: 1000;
+    }
+
+    .hero h1{
+        font-size: 36px;
+    }
+
+    .hero h2{
+        font-size: 22px;
+    }
+
+    #obras{
+        padding: 80px 20px;
+    }
+
+    .obra{
+        width: 90%;
+    }
+
+    #sobre{
+        margin: 80px 20px;
+        padding: 40px 20px;
+    }
+
+    #contato h2{
+        font-size: 40px;
+    }
+
+    .btn{
+        width: 65px;
+        height: 65px;
+    }
+
+    .btn img{
+        width: 30px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size: 28px;
+    }
+
+    .hero h2{
+        font-size: 18px;
+    }
+
+    #obras h2,
+    #sobre h2,
+    #contato h2{
+        font-size: 32px;
+    }
+
+    .menu-flutuante a{
+        font-size: 14px;
+    }
 }
