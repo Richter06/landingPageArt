@@ -193,19 +193,31 @@ body {
 #obras a {
     position: relative;
     top: -40px;
+
     display: block;
     width: 200px;
+
     margin: 20px auto 0;
     padding: 10px 0;
+
     background: hotpink;
     color: #ffffff;
+
     text-align: center;
     border-radius: 30px;
     text-decoration: none;
+
     font-family: 'SugarLike-Bold', sans-serif;
     font-size: 30px;
-    transition: background 0.3s;
+
+    transition: all 0.3s ease;
 }
+
+#obras a:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: deeppink;
+}
+
 
 .obra {
 
