@@ -192,13 +192,13 @@ body {
 
 #obras a {
     position: relative;
-    top: -40px;
+    top: -10px;
 
     display: block;
     width: 200px;
 
     margin: 20px auto 0;
-    padding: 10px 0;
+    padding: 20px 0;
 
     background: hotpink;
     color: #ffffff;
@@ -246,6 +246,21 @@ body {
 .obra p {
     margin-top: 10px;
     opacity: 0.8;
+}
+
+.qr-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.qr-code{
+    border-radius: 20px;
+    width: 200px;
 }
 
 #sobre{
