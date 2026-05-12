@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'SugarLike-Bold';
-    src: url('/fonts/SugarLikeBold.woff2') format('woff2');
+    src: url('./fonts/SugarLikeBold.woff2') format('woff2');
 }
 
 html {
