@@ -96,11 +96,8 @@ Projeto criado para prática e portfólio freelance com foco em:
 
 ## 📌 Melhorias futuras
 
-- [ ] Adicionar mais animações cinematográficas
 - [ ] Otimização de performance
 - [ ] Alterar foto de perfil (porque minha namorada disse que a atual está feia 😅)
-- [ ] Substituir imagens de template pelas obras reais da artista
-- [ ] Adicionar campo de e-mail nos contatos
 
 ---
 
