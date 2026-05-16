@@ -94,13 +94,6 @@ Projeto criado para prática e portfólio freelance com foco em:
 
 ---
 
-## 📌 Melhorias futuras
-
-- [ ] Otimização de performance
-- [ ] Alterar foto de perfil (porque minha namorada disse que a atual está feia 😅)
-
----
-
 ## 👩‍🎨 Autoria
 
 Desenvolvido por **Richard R. Araújo** como projeto de portfólio freelance.
